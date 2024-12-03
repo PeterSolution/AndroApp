@@ -35,7 +35,8 @@ public class MainActivity extends AppCompatActivity {
         cw.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent gotogameactivity=new Intent(MainActivity.this, walutykarta.class);
+                startActivity(gotogameactivity);
             }
         });
         cw2.setOnClickListener(new View.OnClickListener() {
@@ -47,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
     void gotodolar(View view){
-        Intent gotowalutyactivity=new Intent(this, walutykarta.class);
+        Intent gotowalutyactivity=new Intent(MainActivity.this, walutykarta.class);
         startActivity(gotowalutyactivity);
     }
     void gotogame(View view){
